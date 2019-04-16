@@ -1,0 +1,77 @@
+body.home-page {
+  height: 100vh;
+}
+
+section.create-login {
+  height: 50vh;
+}
+section.create-login div.account-btns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+section.create-login div.account-btns button {
+  margin: auto;
+  width: 20vw;
+  height: 10rem;
+  min-width: 20rem;
+  max-width: 40rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+section.create-login div.account {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+section.create-login div.account form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+section.create-login div.account form input {
+  margin-top: 3rem;
+  padding: 2rem;
+  border: 0;
+}
+section.create-login div.account div.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+section.create-login div.account div.form-row h1 {
+  flex-basis: 100%;
+  text-align: center;
+}
+section.create-login div.account div.form-row input.username {
+  margin: auto;
+  width: 60%;
+}
+section.create-login div.account div.form-row div.pokeBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 30%;
+  justify-content: center;
+}
+section.create-login div.account div.form-row div.pokeBox label {
+  text-align: center;
+}
+section.create-login div.account div.form-row div.pokeBox label img {
+  width: 10rem;
+  height: 10rem;
+}
+section.create-login div.account div.form-row div.pokeBox input {
+  margin: auto;
+  margin-top: 1em;
+}
+
+/*# sourceMappingURL=home.css.map */

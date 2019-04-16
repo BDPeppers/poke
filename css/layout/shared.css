@@ -1,0 +1,21 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body.green {
+  background: linear-gradient(0deg, #badbb2 15%, #79ad75 97%);
+  height: 100vh;
+}
+
+div.wrap, section {
+  max-width: 1024px;
+  margin: auto;
+}
+
+button {
+  border: 0;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=shared.css.map */

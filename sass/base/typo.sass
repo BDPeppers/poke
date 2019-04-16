@@ -1,0 +1,22 @@
+@import '../abstract/_abstract'
+
+html, body
+    font-size: 62.5%
+
+p,h1,h2,h3,h4,h5,h6,div,li,button, input, input[placeholder]
+    font-family: 'Orbitron', sans-serif
+
+
+//Header
+h2.edition
+    font-size: 5vw
+    color: $blue-shadow
+    font-weight: 900
+
+@media only screen and (min-width: 900px)//max font size
+    h2.edition
+        font-size: 5rem 
+    
+@media only screen and (max-width: $mobile-flip)//min font size
+    h2.edition
+        font-size: 3rem 

@@ -1,0 +1,63 @@
+@import '../abstract/_abstract'
+    
+body.home-page
+    height: 100vh
+
+section.create-login
+    height: 50vh
+    div.account-btns
+        @include flex(column)
+        align-items: center
+
+        button
+            margin: auto
+            width: 20vw
+            height: 10rem
+            min-width: 20rem
+            max-width: 40rem
+            margin: 1rem 0
+            font-size: 2rem
+    
+    div.account
+        width: 100%
+        @include flex(row)
+        justify-content: center
+
+        form
+            width: 80%
+            @include flex(column)
+            align-items: center
+
+            input
+                margin-top: 3rem
+                padding: 2rem
+                border: 0
+        
+        div.form-row
+            @include flex(row)
+            width: 100%
+            justify-content: space-around
+            padding: 2rem 0
+            h1
+                flex-basis: 100%
+                text-align: center
+            input.username
+                margin: auto
+                width: 60%
+
+            div.pokeBox
+                @include flex(column-reverse)
+                width: 30%
+                justify-content: center
+                label
+                    text-align: center
+                    img
+                        width: 10rem
+                        height: 10rem
+                input
+                    margin: auto
+                    margin-top: 1em
+
+           
+
+            

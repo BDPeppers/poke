@@ -1,0 +1,20 @@
+header.home-header {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header.home-header img {
+  width: 100%;
+}
+header.home-header h2 {
+  padding: 2rem 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+header.home-header div.wrap {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=header.css.map */

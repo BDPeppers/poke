@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>GSU Poke</title>
+</head>
+
+<body class="home-page green">
+
+    <!-- GSU Poke Life
+    CS Edition -->
+
+    <header class="home-header">
+        <div class="wrap">
+            <img src="pics/Gsu_Poke_life.png" alt="GSU Poke Life">
+            <h2 class="edition">CS Edition</h2>
+        </div>
+    </header>
+
+    <section class="create-login" ng-app=''>
+        <!-- ng-app ~ the <section> element is the 'owner' on an 
+        angularjs application -->
+        <div class="account-btns">
+            <button ng-click='create=true; login=false' class="create-btn">Create Account</button>
+            <button ng-click='login=true; create=false' class="login-btn">Login</button>
+        </div>
+
+        <!-- show this section when the btn is clicked -->
+        <div class="account">
+            <!-- Login -->
+            <form action="" ng-show='login' class="login-form home-form">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username" class="username">
+            </form>
+
+            <!-- Create Account -->
+            <form action="" ng-show='create' class="create-form home-form">
+                <div class="form-row">
+                    <h1>Create Account</h1>
+                    <input type="text" placeholder="Username" class="username">
+                </div>
+
+                <div class="form-row">
+
+                    <!-- Charmander -->
+                    <div class="pokeBox">
+                        <input type="checkbox" id="Charmander" />
+                        <label for="Charmander"><img src="pics/curve-path/charmander.gif" /></label>
+                    </div>
+
+                    <!-- Bulbasaur -->
+                    <div class="pokeBox">
+                        <input type="checkbox" id="Bulbasaur" />
+                        <label for="Bulbasaur"><img src="pics/appeal-path/bulbasaur.gif" /></label>
+                    </div>
+
+                    <!-- Squirtle -->
+                    <div class="pokeBox">
+                        <input type="checkbox" id="Squirtle" />
+                        <label for="Squirtle"><img src="pics/bonus-path/squirtle.gif" /></label>
+                    </div>
+
+                </div>
+                <input type="submit" name="submit-btn" value="Begin Your Journey">
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <script>
+
+
+
+    </script>
+    <!-- 
+    angular notes 
+    Data binging - synchronization between the model and view
+        model = collection of data available for application
+        view = html container
+        ng-model binds the value of HTML controls (input,select,textarea)
+        to application data
+        ng-bind binds application data to HTML view
+
+        ng-app defines angularjs application
+         -->
+
+</body>
+
+</html>

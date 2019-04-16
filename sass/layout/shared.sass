@@ -1,0 +1,16 @@
+@import '../abstract/_abstract'
+html, body
+    @include no
+
+body.green
+    background: linear-gradient(0deg, rgba($poke-green,1) 15%, rgba($green-shadow,1) 97%)
+    height: 100vh
+    
+div.wrap, section
+    max-width: $laptop
+    margin: auto
+
+//btns
+button
+    border: 0
+    padding: 2rem
