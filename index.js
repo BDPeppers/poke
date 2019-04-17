@@ -27,7 +27,7 @@
 // Pokemon Objects///////////////////////////////////////////
 //Charmander object
 var Curve = {
-    attack: ['letter grade', 'pass'],
+    attack: ['letter grade', 'pass', 'B average', 'drop grade'],
     evolution: 1,
     health: 100,
     sprite: '',
@@ -56,24 +56,28 @@ var Appeal = {
 var Algorithms = {
     attack: ['Big O', 'Trees', 'NP', 'Dijkstra'],
     sprite: '',
+    level: 4520,
     health: 100
 }
 // Programming Language Concepts
 var PLC = {
     attack: ['Scala', 'Lambda', 'Goto Table', 'Baby Curve'],
     sprite: '',
+    level: 4330,
     health: 100
 }
 // Software Engineering
 var SE = {
     attack: ['Group Members', 'Deadlines', 'Diagrams', 'Group Video'],
     sprite: '', 
+    level: 4350,
     health: 100 
 }
 // Computer Science
 var CS = {
-    attack: ['C-', 'Extra Semester', 'Math', 'Physics'],
+    attack: ['C-', 'Extra Semester', 'Calculus', 'Physics'],
     sprite: '',
+    level: 10000,
     health: 100
 }
 
@@ -103,6 +107,9 @@ function path(Pokemon){
         CS.sprite = 'Dark Charizard';
     }
 }
+
+
+
 function win(Pokemon){
     Pokemon.evolution++;
 }

@@ -3,7 +3,7 @@
 html, body
     font-size: 62.5%
 
-p,h1,h2,h3,h4,h5,h6,div,li,button, input, input[placeholder]
+p,h1,h2,h3,h4,h5,h6,div,li,button,input,input[placeholder]
     font-family: 'Orbitron', sans-serif
 
 
@@ -20,3 +20,21 @@ h2.edition
 @media only screen and (max-width: $mobile-flip)//min font size
     h2.edition
         font-size: 3rem 
+
+
+
+//Battle Buttons
+button.battle-btn
+    font-size: 3rem
+@media only screen and (max-width: $tablet)
+    button.battle-btn
+        font-size: 2.5rem
+@media only screen and (max-width: 650px)
+    button.battle-btn
+        font-size: 1.75rem
+@media only screen and (max-width: 475px)
+    button.battle-btn
+        font-size: 1.3rem
+@media only screen and (max-width: $med-phone)
+    button.battle-btn
+        font-size: 1rem

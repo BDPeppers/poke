@@ -17,12 +17,23 @@ header.home-header div.wrap {
   padding: 1rem;
 }
 
-body.home-page {
-  height: 100vh;
+header.battle-header {
+  height: 10vh;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: auto;
+}
+header.battle-header div {
+  border: black solid 0.1rem;
+  flex-basis: 30%;
 }
 
 section.create-login {
-  height: 50vh;
+  height: 30vh;
 }
 section.create-login div.account-btns {
   display: flex;
@@ -46,12 +57,17 @@ section.create-login div.account {
   flex-direction: row;
   justify-content: center;
 }
+section.create-login div.account fieldset {
+  border: 0;
+  width: 100%;
+}
 section.create-login div.account form {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 section.create-login div.account form input {
   margin-top: 3rem;
@@ -66,8 +82,10 @@ section.create-login div.account div.form-row {
   justify-content: space-around;
   padding: 2rem 0;
 }
-section.create-login div.account div.form-row h1 {
+section.create-login div.account div.form-row h1.account-header {
+  font-size: 2rem;
   flex-basis: 100%;
+  font-weight: 400;
   text-align: center;
 }
 section.create-login div.account div.form-row input.username {
@@ -88,6 +106,10 @@ section.create-login div.account div.form-row div.pokeBox label img {
   width: 10rem;
   height: 10rem;
 }
+section.create-login div.account div.form-row div.pokeBox label h1.pokeName {
+  font-size: 2rem;
+  font-weight: 500;
+}
 section.create-login div.account div.form-row div.pokeBox input {
   margin: auto;
   margin-top: 1em;
@@ -96,10 +118,11 @@ section.create-login div.account div.form-row div.pokeBox input {
 html, body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 body.green {
-  background: linear-gradient(0deg, #badbb2 15%, #79ad75 97%);
+  background-color: #79AD75;
   height: 100vh;
 }
 
@@ -111,6 +134,112 @@ div.wrap, section {
 button {
   border: 0;
   padding: 2rem;
+}
+
+section.battle-field {
+  height: 80vh;
+  margin: auto;
+}
+
+div.battle-frame {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+div.battle-frame div.battle {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle div.side {
+  width: 50%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+div.battle-frame div.battle div.side div.life-box {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite {
+  flex-basis: 70%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.battle-frame div.battle div.side div.battle-sprite span.battle-circle {
+  position: relative;
+  z-index: -1;
+  background-color: gray;
+  width: 60%;
+  height: 10%;
+  border-radius: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.battle-frame div.battle div.side div.battle-sprite img {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite img.foe {
+  width: 20rem;
+  height: 20rem;
+}
+div.battle-frame div.battle-box {
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle-box div.battle-log {
+  width: 55%;
+  height: 100%;
+  background-color: #79AD75;
+  box-sizing: border-box;
+  border: #497646 solid 0.5rem;
+}
+div.battle-frame div.battle-box div.battle-options {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  border: #497646 solid 0.5rem;
+}
+div.battle-frame div.battle-box div.battle-options div.battle-options-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle-box div.battle-options div.battle-options-row button {
+  padding: 1rem;
+  height: 90%;
+  width: 50%;
+  background-color: white;
+}
+
+div.battle-frame div.battle div.side div.battle-sprite img.foe {
+  width: 10rem;
+  height: 15rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite img.you {
+  width: 8rem;
+  height: 8rem;
 }
 
 html, body {
@@ -135,6 +264,30 @@ h2.edition {
 @media only screen and (max-width: 600px) {
   h2.edition {
     font-size: 3rem;
+  }
+}
+button.battle-btn {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  button.battle-btn {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  button.battle-btn {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 475px) {
+  button.battle-btn {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  button.battle-btn {
+    font-size: 1rem;
   }
 }
 

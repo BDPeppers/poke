@@ -40,39 +40,56 @@
         <div class="account">
             <!-- Login -->
             <form action="" ng-show='login' class="login-form home-form">
-                <h1>Login</h1>
-                <input type="text" placeholder="Username" class="username">
+                <div class="form-row">
+                    <h1 class="account-header">Login</h1>
+                    <input type="text" placeholder="Username" class="username">
+                </div>
             </form>
+
 
             <!-- Create Account -->
             <form action="" ng-show='create' class="create-form home-form">
                 <div class="form-row">
-                    <h1>Create Account</h1>
+                    <h1 class="account-header">Create Account</h1>
                     <input type="text" placeholder="Username" class="username">
                 </div>
 
-                <div class="form-row">
+                <fieldset id="pokeBall">
+                        <div class="form-row">
+                                <!-- Charmander aka Curve-->
+                                <div class="pokeBox">
+                                    <input type="radio" id="Charmander" value="curve" name="pokeBall"/>
+                                    <label for="Charmander">
+                                        <h1 class="pokeName">Curve</h1>
+                                        <img src="pics/curve-path/charmander.gif" />
+                                    </label>
+                                </div>
+            
+                                <!-- Bulbasaur aka Appeal-->
+                                <div class="pokeBox">
+                                    <input type="radio" id="Bulbasaur" value="appeal" name="pokeBall"/>
+                                    <label for="Bulbasaur">
+                                        <h1 class="pokeName">Appeal</h1>
+                                        <img src="pics/appeal-path/bulbasaur.gif" />
+                                    </label>
+                                </div>
+            
+                                <!-- Squirtle aka Bonus-->
+                                <div class="pokeBox">
+                                    <input type="radio" id="Squirtle" value="bonus" name="pokeBall"/>
+                                    <label for="Squirtle">
+                                        <h1 class="pokeName">Bonus</h1>
+                                        <img src="pics/bonus-path/squirtle.gif" />
+                                    </label>
+                                </div>
+                            </div>
+            
 
-                    <!-- Charmander -->
-                    <div class="pokeBox">
-                        <input type="checkbox" id="Charmander" />
-                        <label for="Charmander"><img src="pics/curve-path/charmander.gif" /></label>
-                    </div>
+                </fieldset>
 
-                    <!-- Bulbasaur -->
-                    <div class="pokeBox">
-                        <input type="checkbox" id="Bulbasaur" />
-                        <label for="Bulbasaur"><img src="pics/appeal-path/bulbasaur.gif" /></label>
-                    </div>
-
-                    <!-- Squirtle -->
-                    <div class="pokeBox">
-                        <input type="checkbox" id="Squirtle" />
-                        <label for="Squirtle"><img src="pics/bonus-path/squirtle.gif" /></label>
-                    </div>
-
-                </div>
+                
                 <input type="submit" name="submit-btn" value="Begin Your Journey">
+
             </form>
         </div>
     </section>

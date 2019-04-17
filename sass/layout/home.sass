@@ -1,10 +1,10 @@
 @import '../abstract/_abstract'
     
 body.home-page
-    height: 100vh
+    // height: 100vh
 
 section.create-login
-    height: 50vh
+    height: 30vh
     div.account-btns
         @include flex(column)
         align-items: center
@@ -23,10 +23,17 @@ section.create-login
         @include flex(row)
         justify-content: center
 
+        fieldset
+            border: 0
+            width: 100%
+
+
+
         form
             width: 80%
             @include flex(column)
             align-items: center
+            padding-bottom: 2rem
 
             input
                 margin-top: 3rem
@@ -38,8 +45,10 @@ section.create-login
             width: 100%
             justify-content: space-around
             padding: 2rem 0
-            h1
+            h1.account-header
+                font-size: 2rem
                 flex-basis: 100%
+                font-weight: 400
                 text-align: center
             input.username
                 margin: auto
@@ -54,6 +63,9 @@ section.create-login
                     img
                         width: 10rem
                         height: 10rem
+                    h1.pokeName
+                        font-size: 2rem
+                        font-weight: 500
                 input
                     margin: auto
                     margin-top: 1em

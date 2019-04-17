@@ -17,4 +17,19 @@ header.home-header div.wrap {
   padding: 1rem;
 }
 
+header.battle-header {
+  height: 10vh;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: auto;
+}
+header.battle-header div {
+  border: black solid 0.1rem;
+  flex-basis: 30%;
+}
+
 /*# sourceMappingURL=header.css.map */

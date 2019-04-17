@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header class="battle-header">
+        <div class="player name">
+
+        </div>
+        <div class="team">
+            <!-- player and pokemon -->
+
+        </div>
+        <div class="battle-num">
+
+        </div>
+    </header>
+
+    <section class="battle-field">
+
+        <div class="battle-frame">
+
+            <div class="battle">
+                <div class="side">
+                    <div class="life-box">
+                        <!-- enemy life box -->
+
+                    </div>
+                    <div class="battle-sprite">
+                        <!-- player battle sprite -->
+                            <img class="you" src="pics/appeal-path/bulbasaur-back.gif" alt="Your Back">
+                       
+                    </div>
+
+                </div>
+                <div class="side">
+                    <div class="battle-sprite">
+                        <!-- enemy battle sprite -->
+                            <img class="foe" src="pics/appeal-path/charizard.gif" alt="Your Opponent">
+                        
+
+                    </div>
+                    <div class="life-box">
+                        <!-- player life box -->
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="battle-box">
+                <div class="battle-log">
+
+                </div>
+                <div class="battle-options">
+                    <div class="battle-options-row">
+                        <button class="battle-btn">Fight</button>
+                        <!-- When fight button is clicked fight options replace all buttons -->
+                        <!-- When other buttons are clicked the - response shows in attack log -->
+                        <button class="battle-btn">Notes</button>
+                        <!--You're 2 weeks behind!!!-->
+                        <!-- <button class="battle-btn" id="attack-0"></button> -->
+                        <!-- <button class="battle-btn" id="attack-1"></button> -->
+                    </div>
+                    <div class="battle-options-row">
+                        <button class="battle-btn">Student Loans</button>
+                        <!--You owe 1 million!!!-->
+                        <button class="battle-btn">Withdraw</button>
+                        <!--Its too late!!!-->
+                        <!-- <button class="battle-btn" id="attack-2"></button> -->
+                        <!-- <button class="battle-btn" id="attack-3"></button> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
     <!-- 
     Withdraw - Run
     Loans - Items
     Pokemon - Notes -->
 </body>
+
 </html>

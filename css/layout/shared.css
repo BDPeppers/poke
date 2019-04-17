@@ -1,10 +1,11 @@
 html, body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 body.green {
-  background: linear-gradient(0deg, #badbb2 15%, #79ad75 97%);
+  background-color: #79AD75;
   height: 100vh;
 }
 

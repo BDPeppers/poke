@@ -1,0 +1,94 @@
+@import '../abstract/_abstract'
+
+//battle header is 10vh
+
+section.battle-field
+    height: 80vh
+    margin: auto
+
+div.battle-frame
+    @include flex(column)
+    height: 100%
+    // actual battle
+    div.battle
+        height: 80%
+        @include flex(row)
+        div.side
+            width: 50%
+            box-sizing: border-box
+            border: black solid .1rem
+            @include flex(column)
+            div.life-box
+                flex-basis: 30%
+                box-sizing: border-box
+                border: black solid .1rem
+            div.battle-sprite
+                flex-basis: 70%
+                box-sizing: border-box
+                border: black solid .1rem
+                @include flex(row)
+                justify-content: center
+                align-items: center
+                span.battle-circle
+                    position: relative
+                    z-index: -1
+                    background-color: gray
+                    width: 60%
+                    height: 10%
+                    border-radius: 80%
+                    @include flex(row)
+                    justify-content: center
+                    align-items: center
+
+                img
+                    position: relative
+                    width: 10rem
+                    height: 10rem
+                img.foe
+                    width: 20rem
+                    height: 20rem
+    // battle options
+    div.battle-box
+        height: 20%
+        @include flex(row)
+        //text area
+        div.battle-log
+            width: 55%
+            height: 100%
+            background-color: $green-shadow
+            box-sizing: border-box
+            border: darken($green-shadow, 20%) solid .5rem
+            
+        div.battle-options
+            width: 45%
+            height: 100%
+            @include flex(row)
+            box-sizing: border-box
+            border: darken($green-shadow, 20%) solid .5rem
+           
+            div.battle-options-row
+                width: 100%
+                @include flex(row)
+                button
+                    padding: 1rem
+                    height: 90%
+                    width: 50%
+                    background-color: $white
+
+
+
+@media only screen and (min-width: $large-phone)
+div.battle-frame
+    div.battle
+        div.side
+            div.battle-sprite
+                img.foe
+                    width: 10rem
+                    height: 15rem
+                img.you
+                    width: 8rem
+                    height: 8rem 
+
+
+
+

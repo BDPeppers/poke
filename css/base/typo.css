@@ -22,5 +22,29 @@ h2.edition {
     font-size: 3rem;
   }
 }
+button.battle-btn {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  button.battle-btn {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  button.battle-btn {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 475px) {
+  button.battle-btn {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  button.battle-btn {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=typo.css.map */

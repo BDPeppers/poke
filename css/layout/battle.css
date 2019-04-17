@@ -1,3 +1,107 @@
+section.battle-field {
+  height: 80vh;
+  margin: auto;
+}
 
+div.battle-frame {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+div.battle-frame div.battle {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle div.side {
+  width: 50%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+div.battle-frame div.battle div.side div.life-box {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite {
+  flex-basis: 70%;
+  box-sizing: border-box;
+  border: black solid 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.battle-frame div.battle div.side div.battle-sprite span.battle-circle {
+  position: relative;
+  z-index: -1;
+  background-color: gray;
+  width: 60%;
+  height: 10%;
+  border-radius: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.battle-frame div.battle div.side div.battle-sprite img {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite img.foe {
+  width: 20rem;
+  height: 20rem;
+}
+div.battle-frame div.battle-box {
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle-box div.battle-log {
+  width: 55%;
+  height: 100%;
+  background-color: #79AD75;
+  box-sizing: border-box;
+  border: #497646 solid 0.5rem;
+}
+div.battle-frame div.battle-box div.battle-options {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  border: #497646 solid 0.5rem;
+}
+div.battle-frame div.battle-box div.battle-options div.battle-options-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+div.battle-frame div.battle-box div.battle-options div.battle-options-row button {
+  padding: 1rem;
+  height: 90%;
+  width: 50%;
+  background-color: white;
+}
+
+div.battle-frame div.battle div.side div.battle-sprite img.foe {
+  width: 10rem;
+  height: 15rem;
+}
+div.battle-frame div.battle div.side div.battle-sprite img.you {
+  width: 8rem;
+  height: 8rem;
+}
 
 /*# sourceMappingURL=battle.css.map */
